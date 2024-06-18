@@ -1,0 +1,54 @@
+/* Estilo para o botão "Associar" */
+#associarBtn {
+    display: block;
+    margin: 10px auto; /* Centraliza verticalmente e adiciona espaçamento */
+}
+
+/* Estilo para a lista de associações */
+#associacoesList {
+    list-style-type: none; /* Remove marcadores de lista */
+    padding: 0;
+}
+
+#associacoesList li {
+    margin-bottom: 5px; /* Espaçamento entre os itens da lista */
+}
+
+/* Estilo para o container de mensagens */
+.message-container {
+    margin-top: 20px; /* Espaçamento do topo */
+}
+
+.alert {
+    padding: 10px;
+    margin-bottom: 10px; /* Espaçamento entre as mensagens */
+    border-radius: 5px;
+}
+
+.alert-success {
+    background-color: #d4edda; /* Verde suave */
+    border-color: #c3e6cb; /* Verde claro */
+    color: #155724; /* Texto verde escuro */
+}
+
+.alert-danger {
+    background-color: #f8d7da; /* Vermelho suave */
+    border-color: #f5c6cb; /* Vermelho claro */
+    color: #721c24; /* Texto vermelho escuro */
+}
+
+.associado {
+    font-weight: bold;
+    color: #FF5733; /* Cor de destaque */
+}
+
+
+/* Estilo global para links (opcional) */
+a {
+    color: #007bff; /* Azul padrão para links */
+    text-decoration: none; /* Remove sublinhado padrão */
+}
+
+a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}

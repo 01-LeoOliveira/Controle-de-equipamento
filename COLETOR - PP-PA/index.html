@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Associação de Números e Usuários</title>
+
+    <!-- Incluir Bootstrap CSS para estilo -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Incluir Select2 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+    <!-- Incluir jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Incluir Select2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <!-- Incluir QRCode.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1>Associação de Números e Usuários</h1>
+        <div class="form-group">
+            <label for="numeroSelect">Número de Série:</label>
+            <select id="numeroSelect" class="form-control">
+                <option value="">Todos</option>
+                <option value="19171B39E0">19171B39E0</option>
+                <option value="19171B3E65">19171B3E65</option>
+                <option value="19171B3E80">19171B3E80</option>
+                <option value="19171B430D">19171B430D</option>
+                <option value="22325B0809">22325B0809</option>
+                <option value="22326B0799">22326B0799</option>
+                <option value="19361B5B34">19361B5B34</option>
+                <option value="19171B3A1B">19171B3A1B</option>
+                <option value="19171B3C5A">19171B3C5A</option>
+                <option value="19171B2D45">19171B2D45</option>
+                <option value="19171B39A5">19171B39A5</option>
+                <option value="19171BA29B">19171BA29B</option>
+                <option value="19171B40D8">19171B40D8</option>
+                <option value="2120852010194">2120852010194</option>
+                <option value="2116520100709">2116520100709</option>
+                <option value="21203B57A1">21203B57A1</option>
+                <option value="2116520100607">2116520100607</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="usuarioSelect">Usuário:</label>
+            <select id="usuarioSelect" class="form-control">
+                <option value="">Todos</option>
+                <option value="450132 - ADILSON JOSE DOS SANTOS RIBEIRO">450132 - ADILSON JOSE DOS SANTOS RIBEIRO</option>
+                <option value="450613 - ADRIANO QUEIROZ CRAVO">450613 - ADRIANO QUEIROZ CRAVO</option>
+                <option value="453411 - AFONSO HENRIQUE GUEDES DOS SANTOS">453411 - AFONSO HENRIQUE GUEDES DOS SANTOS</option>
+                <option value="450711 - ANDRE NILTO DOS SANTOS GOES">450711 - ANDRE NILTO DOS SANTOS GOES</option>
+                <option value="430386 - ASAPH GUTO FONTES E SILVA">430386 - ASAPH GUTO FONTES E SILVA</option>
+                <option value="435409 - ATHALIA DA SILVA PASTANA">435409 - ATHALIA DA SILVA PASTANA</option>
+                <option value="444543 - BRENO MATHEUS LIRA DE JESUS">444543 - BRENO MATHEUS LIRA DE JESUS</option>
+                <option value="449413 - CAMILY DE OLIVEIRA CARDOSO">449413 - CAMILY DE OLIVEIRA CARDOSO</option>
+                <option value="425598 - CARLOS DANIEL ALMEIDA DOS SANTOS">425598 - CARLOS DANIEL ALMEIDA DOS SANTOS</option>
+                <option value="444548 - CARLOS IGOR SANTA BRIGIDA SALDANHA">444548 - CARLOS IGOR SANTA BRIGIDA SALDANHA</option>
+                <option value="430832 - CLEITON FARIAS SILVA">430832 - CLEITON FARIAS SILVA</option>
+                <option value="452102 - CRISTIAN BARROS CORREA">452102 - CRISTIAN BARROS CORREA</option>
+                <option value="425649 - DARIO FERREIRA LOPES">425649 - DARIO FERREIRA LOPES</option>
+                <option value="430915 - DELIEU SANTOS FERREIRA">430915 - DELIEU SANTOS FERREIRA</option>
+                <option value="418694 - DELIZELE RIBEIRO PINTO">418694 - DELIZELE RIBEIRO PINTO</option>
+                <option value="451280 - DENILSON DOS SANTOS PINHEIRO">451280 - DENILSON DOS SANTOS PINHEIRO</option>
+                <option value="434874 - DEYSON DOS REIS CRUZ">434874 - DEYSON DOS REIS CRUZ</option>
+                <option value="425854 - DIEGO DO NASCIMENTO DE SOUSA">425854 - DIEGO DO NASCIMENTO DE SOUSA</option>
+                <option value="430967 - EDCLEY SOUZA LIMA">430967 - EDCLEY SOUZA LIMA</option>
+                <option value="450426 - EDEN PEREIRA COSTA">450426 - EDEN PEREIRA COSTA</option>
+                <option value="441610 - ELI NAIANE DA SILVA DOS SANTOS">441610 - ELI NAIANE DA SILVA DOS SANTOS</option>
+                <option value="453399 - ELVIS SOUSA DE BRITO">453399 - ELVIS SOUSA DE BRITO</option>
+                <option value="433386 - ELZILENE MONTEIRO DE JESUS">433386 - ELZILENE MONTEIRO DE JESUS</option>
+                <option value="432870 - FELIPE DE JESUS DANTAS LIMA">432870 - FELIPE DE JESUS DANTAS LIMA</option>
+                <option value="453123 - FELIPE LEON SILVA LOPES">453123 - FELIPE LEON SILVA LOPES</option>
+                <option value="432868 - FERNANDA CORDEIRO DA CONCEICAO">432868 - FERNANDA CORDEIRO DA CONCEICAO</option>
+                <option value="445793 - FERNANDO CHARLES CARDOSO SEREJO">445793 - FERNANDO CHARLES CARDOSO SEREJO</option>
+                <option value="427928 - GABRIEL DOS SANTOS DA SILVA">427928 - GABRIEL DOS SANTOS DA SILVA</option>
+                <option value="453380 - GERMAN CHUCO OSCANOA NETO">453380 - GERMAN CHUCO OSCANOA NETO</option>
+                <option value="444550 - GILSON DOS SANTOS FERREIRA">444550 - GILSON DOS SANTOS FERREIRA</option>
+                <option value="441622 - GRAZIELI AMARAL DE AMORIM">441622 - GRAZIELI AMARAL DE AMORIM</option>
+                <option value="431600 - GUSTAVO DE LUCA ALEIXO DA SILVA">431600 - GUSTAVO DE LUCA ALEIXO DA SILVA</option>
+                <option value="452099 - GUSTAVO DE MOURA E SILVA">452099 - GUSTAVO DE MOURA E SILVA</option>
+                <option value="440330 - HELITON DOUGLAS VIEIRA TEIXEIRA">440330 - HELITON DOUGLAS VIEIRA TEIXEIRA</option>
+                <option value="430973 - HIGOR CORDEIRO DA CONCEICAO">430973 - HIGOR CORDEIRO DA CONCEICAO</option>
+                <option value="441601 - IGOR MARTINS RAIOL">441601 - IGOR MARTINS RAIOL</option>
+                <option value="449415 - IGOR PEREIRA CARDOSO">449415 - IGOR PEREIRA CARDOSO</option>
+                <option value="431143 - ISMAEL RODRIGO GUIMARAES DA SILVA">431143 - ISMAEL RODRIGO GUIMARAES DA SILVA</option>
+                <option value="431121 - JAILSON RIBEIRO DA COSTA">431121 - JAILSON RIBEIRO DA COSTA</option>
+                <option value="442041 - JHONNES MARCOS MORAES DA COSTA">442041 - JHONNES MARCOS MORAES DA COSTA</option>
+                <option value="448710 - JOAO ALEXANDRE SOUSA DE SOUSA">448710 - JOAO ALEXANDRE SOUSA DE SOUSA</option>
+                <option value="452070 - JOAO PAULO DE PAULA PEREIRA">452070 - JOAO PAULO DE PAULA PEREIRA</option>
+                <option value="452066 - JONHES PETERSON FERREIRA MAGALHAES">452066 - JONHES PETERSON FERREIRA MAGALHAES</option>
+                <option value="444874 - JOSE ARTHUR SILVA DE SOUZA">444874 - JOSE ARTHUR SILVA DE SOUZA</option>
+                <option value="430291 - JOSE PEREIRA GOMES FILHO">430291 - JOSE PEREIRA GOMES FILHO</option>
+                <option value="440200 - JULIANE SANTOS VAZ">440200 - JULIANE SANTOS VAZ</option>
+                <option value="449271 - JULIO PINHEIRO DO ROSARIO JUNIOR">449271 - JULIO PINHEIRO DO ROSARIO JUNIOR</option>
+                <option value="444561 - KARINA LIMA TEIXEIRA">444561 - KARINA LIMA TEIXEIRA</option>
+                <option value="432041 - KAUE GONCALVES DE CARVALHO">432041 - KAUE GONCALVES DE CARVALHO</option>
+                <option value="440301 - KLEBER HENRIQUE DA SILVA FURTADO">440301 - KLEBER HENRIQUE DA SILVA FURTADO</option>
+                <option value="452061 - LEANDRO JOSE DA SILVA LIMA">452061 - LEANDRO JOSE DA SILVA LIMA</option>
+                <option value="449437 - LEONARDO SENA DA GAMA">449437 - LEONARDO SENA DA GAMA</option>
+                <option value="450707 - LEVI OLIVEIRA FERREIRA">450707 - LEVI OLIVEIRA FERREIRA</option>
+                <option value="436435 - LIEDSON RIBEIRO DE SOUSA">436435 - LIEDSON RIBEIRO DE SOUSA</option>
+                <option value="444860 - LIMDEMBERG SILVA DA SILVA">444860 - LIMDEMBERG SILVA DA SILVA</option>
+                <option value="429319 - LINDOMAR DA SILVA CORREA">429319 - LINDOMAR DA SILVA CORREA</option>
+                <option value="438353 - LISA ANDERSEN SOUSA DE SOUSA">438353 - LISA ANDERSEN SOUSA DE SOUSA</option>
+                <option value="441590 - LIVIO SEBASTIAO DA LUZ FERREIRA">441590 - LIVIO SEBASTIAO DA LUZ FERREIRA</option>
+                <option value="451288 - LUAN MONTEIRO DO ESPIRITO SANTO">451288 - LUAN MONTEIRO DO ESPIRITO SANTO</option>
+                <option value="448640 - LUCAS DA COSTA MENDES">448640 - LUCAS DA COSTA MENDES</option>
+                <option value="451993 - LUCAS DO NASCIMENTO SARDINHA">451993 - LUCAS DO NASCIMENTO SARDINHA</option>
+                <option value="441838 - LUCAS NASCIMENTO DOS SANTOS">441838 - LUCAS NASCIMENTO DOS SANTOS</option>
+                <option value="452042 - LUCAS PIERRE ALVES">452042 - LUCAS PIERRE ALVES</option>
+                <option value="441661 - LUCAS TEIXEIRA DA SILVA">441661 - LUCAS TEIXEIRA DA SILVA</option>
+                <option value="453369 - LUIZ FELIPE DA SILVA CARVALHO">453369 - LUIZ FELIPE DA SILVA CARVALHO</option>
+                <option value="445851 - LUIZ FELIPE TEIXEIRA NANTES JUNIOR">445851 - LUIZ FELIPE TEIXEIRA NANTES JUNIOR</option>
+                <option value="451548 - LUIZ RICARDO CANCIO DA SILVA">451548 - LUIZ RICARDO CANCIO DA SILVA</option>
+                <option value="445592 - MAIKON URIAS RAMOS DOS REIS">445592 - MAIKON URIAS RAMOS DOS REIS</option>
+                <option value="442278 - MARCELLO LOBATO DIAS">442278 - MARCELLO LOBATO DIAS</option>
+                <option value="450296 - MARCOS ANTONIO PIMENTEL DE BRITO">450296 - MARCOS ANTONIO PIMENTEL DE BRITO</option>
+                <option value="449250 - MARCOS VINICIUS DA SILVA BRAGA">449250 - MARCOS VINICIUS DA SILVA BRAGA</option>
+                <option value="450134 - MARIO MAIA REIS">450134 - MARIO MAIA REIS</option>
+                <option value="442142 - MARLOM ADAELTOM GOMES MONTEIRO">442142 - MARLOM ADAELTOM GOMES MONTEIRO</option>
+                <option value="440305 - MARTA SOUSA DE ALMEIDA">440305 - MARTA SOUSA DE ALMEIDA</option>
+                <option value="441615 - MAYONK SOUSA MONTEIRO">441615 - MAYONK SOUSA MONTEIRO</option>
+                <option value="449410 - MICHELE PANTOJA DA SILVA">449410 - MICHELE PANTOJA DA SILVA</option>
+                <option value="449445 - MOISES DA SILVA LARANJEIRA">449445 - MOISES DA SILVA LARANJEIRA</option>
+                <option value="437452 - NATHALIA DA SILVA LARANJEIRA">437452 - NATHALIA DA SILVA LARANJEIRA</option>
+                <option value="442005 - NICOLAS FURTADO AMARAL">442005 - NICOLAS FURTADO AMARAL</option>
+                <option value="440849 - PATRICK DANIEL MOURA MONTEIRO">440849 - PATRICK DANIEL MOURA MONTEIRO</option>
+                <option value="451963 - PAULO HIGOR COLARES DE SOUZA">451963 - PAULO HIGOR COLARES DE SOUZA</option>
+                <option value="441646 - PEDRO HENRIQUE SOUZA DA COSTA">441646 - PEDRO HENRIQUE SOUZA DA COSTA</option>
+                <option value="438175 - RAFAEL SILVA DA COSTA">438175 - RAFAEL SILVA DA COSTA</option>
+                <option value="444552 - RAIMUNDA NAZARE KAIZA DA SILVA">444552 - RAIMUNDA NAZARE KAIZA DA SILVA</option>
+                <option value="437236 - RAMILLE CAROLINA ATAIDE BATISTA">437236 - RAMILLE CAROLINA ATAIDE BATISTA</option>
+                <option value="451991 - REYNAN DA SILVA MARQUES">451991 - REYNAN DA SILVA MARQUES</option>
+                <option value="453409 - RICARDO DOS ANJOS ALMEIDA">453409 - RICARDO DOS ANJOS ALMEIDA</option>
+                <option value="449408 - RIKELLE MIRANDA DE MENDONCA">449408 - RIKELLE MIRANDA DE MENDONCA</option>
+                <option value="436439 - ROBERTO MACIEL DE MEDEIROS">436439 - ROBERTO MACIEL DE MEDEIROS</option>
+                <option value="440892 - ROBSON VIANA DA SILVEIRA">440892 - ROBSON VIANA DA SILVEIRA</option>
+                <option value="444770 - ROGERIO RIBEIRO DA SILVA">444770 - ROGERIO RIBEIRO DA SILVA</option>
+                <option value="431141 - ROGERIO RODRIGUES DOS SANTOS">431141 - ROGERIO RODRIGUES DOS SANTOS</option>
+                <option value="444597 - RONNY CLEITON DA SILVA CORDOVIL">444597 - RONNY CLEITON DA SILVA CORDOVIL</option>
+                <option value="439320 - RUDSON SILVA DA SILVA">439320 - RUDSON SILVA DA SILVA</option>
+                <option value="445587 - RUI AGUINALDO DO NASCIMENTO NEGRAO">445587 - RUI AGUINALDO DO NASCIMENTO NEGRAO</option>
+                <option value="434882 - SARA DE NAZARE TAVARES TEIXEIRA">434882 - SARA DE NAZARE TAVARES TEIXEIRA</option>
+                <option value="441559 - SEBASTIAO LIMA DOS SANTOS">441559 - SEBASTIAO LIMA DOS SANTOS</option>
+                <option value="444559 - SILVIO DONIZETTI OLIVEIRA DA LUZ">444559 - SILVIO DONIZETTI OLIVEIRA DA LUZ</option>
+                <option value="453361 - SUELLEN FABIANE DOS SANTOS BARBOSA">453361 - SUELLEN FABIANE DOS SANTOS BARBOSA</option>
+                <option value="435406 - THAIS DOS SANTOS DA SILVA">435406 - THAIS DOS SANTOS DA SILVA</option>
+                <option value="436193 - THALISOM MICHEL DOS SANTOS SOUZA">436193 - THALISOM MICHEL DOS SANTOS SOUZA</option>
+                <option value="445599 - TIAGO GEMAQUE ARAUJO">445599 - TIAGO GEMAQUE ARAUJO</option>
+                <option value="444536 - VITOR BARBOSA LEAL">444536 - VITOR BARBOSA LEAL</option>
+                <option value="440923 - VITOR MANOEL RODRIGUES DE ARAUJO">440923 - VITOR MANOEL RODRIGUES DE ARAUJO</option>
+                <option value="438170 - WELISSON PONTES PAZ">438170 - WELISSON PONTES PAZ</option>
+                <option value="421186 - WELITON MARTINS BRAGA">421186 - WELITON MARTINS BRAGA</option>
+                <option value="451490 - WILLIAM MATTOS MONTEIRO RAMOS">451490 - WILLIAM MATTOS MONTEIRO RAMOS</option>
+                <option value="440841 - YSLAINNE THAYSSA AVIZ DO VALE LIMA">440841 - YSLAINNE THAYSSA AVIZ DO VALE LIMA</option>     
+            
+                
+            </select>
+        </div>
+        <button id="associarBtn" class="btn btn-primary">Associar</button>
+        <button id="gerarRelatorioBtn" class="btn btn-secondary" style="display:none;">Gerar Relatório</button>
+        <button id="limparHistoricoBtn" class="btn btn-danger" style="display:none;">Limpar Histórico</button>
+        
+        <div class="message-container mt-4"></div>
+        
+        <ul id="associacoesList" class="mt-4"></ul>
+
+        <div id="qrcodeContainer" style="display: none;"></div>
+    </div>
+
+    <!-- Incluir seu script JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
