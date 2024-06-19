@@ -19,6 +19,10 @@
 
     <!-- Incluir QRCode.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    
+    <!--Logo oficial formato Webp para ícone -->
+    <link rel="icon" type="image/webp" href="icon-57x57.webp">
+
 </head>
 <body>
     <div class="container mt-4">
@@ -175,5 +179,12 @@
 
     <!-- Incluir seu script JavaScript -->
     <script src="js/main.js"></script>
+    <!-- Aviso de conscientização-->
+    <script>
+        function mostrarAvisoConsole(mensagem, tempo) {
+    console.log('%c' + mensagem, 'background: red; color: white; padding: 10px; border: 1px solid #ccc; font-weight: bold; box-shadow: 0 0 10px rgba(0,0,0,0.1)');
+}
+mostrarAvisoConsole('Se alguém te ensinou a injetar algum código aqui, não faça. É golpe!');
+    </script>
 </body>
 </html>
